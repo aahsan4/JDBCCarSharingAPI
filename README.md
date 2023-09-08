@@ -1,8 +1,3 @@
-This is the *Car Sharing* project I made myself.
+This is a *Java H2 Database Car Sharing* project that I made myself.
 
-
-<p>Car-sharing is becoming a more and more popular green alternative to owning a car. Let's create a program that manages a car-sharing service allowing companies to rent out their cars and find customers.</p><br/><br/>Learn more at <a href="https://hyperskill.org/projects/140?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card">https://hyperskill.org/projects/140</a>
-
-Here's the link to the project: https://hyperskill.org/projects/140
-
-Check out my profile: https://hyperskill.org/profile/366158627
+<p>Car-sharing is becoming a more and more popular green alternative to owning a car. This is a program that manages a car-sharing service allowing companies to rent out their cars and find customers. I used H2 database to store the Company, Car, Customer data. I connected to the database using JDBC driver and Connection objects. Wrote the queries in SQL to Create, Read, Update and Delete the tables.</p>
