@@ -73,7 +73,7 @@ public class Menu {
             }
             System.out.println("0. Back");
             int companyChoice = scanner.nextInt();
-            //scanner.nextLine();
+            
             if (companyChoice == 0) {
                 managerMenu();
             } else if (companyChoice > 0 && companyChoice <= companies.size()) {
@@ -122,15 +122,15 @@ public class Menu {
         System.out.println();
         System.out.println("Enter the car name:");
 
-        // Read user input as a string
+        // Reading user input as a string
         String input = scanner.nextLine().trim();
 
-        // Parse the input as needed (e.g., check for numeric values)
+        // Parsing the input as needed (e.g., check for numeric values)
         if (input.matches("[0-9]+")) {
             System.out.println("Invalid car name. Please enter a valid name.");
-            createCar(company); // Recursively ask for input again
+            createCar(company); // Recursively asking for input again
         } else {
-            // Car name is valid, proceed with creating the car
+            // Car name is valid, proceeding with creating the car
             Car newCar = new Car(input, company.getId());
             carDAO.createCar(newCar);
             System.out.println("The car was added!");
@@ -138,15 +138,9 @@ public class Menu {
         }
     }
     private void createCompany() {
-        //System.out.println();
         System.out.println("Enter the company name:");
         String name = scanner.nextLine();
-        if (name.isEmpty()) {
-            name = scanner.nextLine();
-            //System.out.println("Company name cannot be empty.");
-            //managerMenu();
-            //return ;
-        }
+    
         if (name.isEmpty()) {
             managerMenu();
         }
